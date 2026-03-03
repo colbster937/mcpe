@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>MCPE</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="icon.svg" />
+    <script src="index.js"></script>
+    <script async src="game/mcpe.js"></script>
+  </head>
+  <body>
+    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" tabindex="-1"></canvas>
+    <script>
+      var Module = { canvas: document.querySelector('#canvas') };
+    </script>
+  </body>
+</html>
